@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {     height: 100%;}
+
+body {background: none repeat scroll 0% 0% #FFFFFF;font-family:"宋体" "微软雅黑",;font-size: 12px;margin: 0px;padding: 0px;}
+hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {margin: 0px;padding: 0px;}
+select, textarea, input { background: none repeat scroll 0% 0% transparent;border: 0px none;}
+
+ul, ol, li, dl, dd, dt {list-style: none outside none;}
+
+input, select, img {outline-style: none;vertical-align: middle;}
+
+h1, h2, h3, h4, h5, h6 { margin: 0px;padding: 0px;}
+
+table {border-collapse: collapse;border-spacing: 0px;}
+
+em, i {font-style: normal;}
+
+img {border: 0px none;outline-style: none;}
+
+.fl {float: left;}
+
+.fr {float: right;}
+
+.cl {background: none repeat scroll 0% 0% transparent; clear: both;height: 0px; line-height: 0; overflow: hidden; width: 0px;}
+
+.clearfix:after {clear: both;content: "."; display: block; height: 0px; visibility: hidden;}
+
+.clearfix {zoom:1}
+a {color:#004276;text-decoration:none;cursor:pointer}
+
+a:hover {text-decoration:underline;color:#ff9000}
+.fl{ float:left}
+.fr{ float:right}
+
+/*头部*/
+.sun-top{width:100%;height:80px;background:#054b87;}
+.top-conten{width:980px;margin:0 auto;}
+.sun-logo{padding-top:10px;float:left}
+.sun-nav-b{float:right;padding-top:30px}
+.sun-nav-b a{color:#FFF}
+.sun-nav-b a:hover{color:#ff9000}
+.sun-nav-b i{color:#FFF}
+/*内容*/
+.main-warp{width:980px;margin:15px auto;}
+.nav-wrap{border-bottom:2px solid #ff9000;padding-bottom:1px;}
+.nav-list{height:37px;background:#f4f4f4;}
+.nav-list a{padding:0 20px;color:#313131;line-height:37px;display:block;float:left;font-size:18px;font-family:"微软雅黑";}
+.nav-list a.cur{background:#ff9000;color:#fff}
+.list-left{width:678px;padding-right:50px;float:left}
+.list-content{padding-top:15px}
+.list-theme{border-bottom:1px solid #dddddd;height:30px;line-height:30px;font-size:16px;font-family:"微软雅黑";margin-bottom:5px}
+.list-theme span{border-bottom:2px solid #143c8c;height:24px;line-height:24px;padding-top:4px;display:block;float:left}
+.list-content a{width:110px;display:block;float:left;color:#555555;line-height:30px;font-size:14px;font-family:"微软雅黑"}
+.list-content a:hover{color:#ff9000}
+.list-right{float:left;width:252px;padding-top:30px}
+.list-right h3{font-size:14px;font-family:"微软雅黑";color:#222222}
+.list-pic{}
+.list-pic a{;display:block;float:left;padding:5px 5px 10px 5px}
+.sun-hot-new{padding:5px 0 15px 0;}
+.sun-hot-new li{height:34px;border-bottom:1px dashed #dddddd;padding-left:27px;position:relative;line-height:34px;font-family:"微软雅黑"}
+.sun-hot-new li.last{border:none}
+.sun-hot-new li span{display:block;width:18px;height:18px;line-height:18px;text-align:center;background:url(../img/nuber2-bg.jpg) no-repeat;position:absolute;left:0px;top:8px;color:#FFF;}
+.sun-hot-new li span.hot-tow{background:url(../img/nuber-bg.jpg) no-repeat;}
+.sun-hot-new a{color:#7a7a7a}
+.sun-hot-new li a:hover{color:#ff9000}
+/*页角*/
+.footer{padding-top:10px;color:#666666;font-family:"宋体";border-top:1px solid #dddddd;width:980px;margin:0 auto} 
+.foorer-nav a{color:#666666;font-size:12px}
+.foorer-nav a:hover{color:#ff9000}
+
+/*行业通*/
+
+/*报错页*/
+.header-warp{width:100%;height:80px;background:#054b87;}
+.header{width:980px;margin:0 auto;height:80px}
+.logo{width:185px;height:55px;float:left;margin-top:13px}
+.sun-nav{float:left;line-height:30px;margin:40px 0 0 40px }
+.sun-nav a{padding:0 15px;color:#ffffff;display:block;float:left;font-family:"微软雅黑";font-size:14px}
+.sun-nav a:hover{color:#ff9000}
+
+.error-box{position:relative;height:475px;}
+.error-pic{position:absolute;width:226px;left:200px;top:130px}
+.error-msg{padding:132px 0 0 440px}
+.error-msg h2{color:#434343;font-size:18px;font-family:"微软雅黑";padding-bottom:10px}
+.error-msg p{color:#666666;line-height:30px;font-family:"微软雅黑";font-size:14px}
+.error-msg p a{color:#054b87;font-family:"微软雅黑"}
+.error-msg p a:hover{color:#ff9000}
+.error-msg-1{padding-top:20px}
+.error-msg-1 p{font-size:12px;font-family:"微软雅黑"}
+
+
+
+/*跳转页*/
+.skip-contene{height:300px;padding:104px 0 0 280px}
+.skip-box{width:336px;height:72px;border:1px solid #f1e2cb;background: url(../img/skip-bg.jpg) no-repeat 10px 15px #faf7ed;padding-left:60px;margin-bottom:10px}
+.skip-box h2{padding:15px 0 5px 0;color:#434343;font-family:"微软雅黑"}
+.skip-box p{color:#666666;font-family:"微软雅黑";font-size:14px}
+.hd{line-height:30px;font-family:"微软雅黑";color:#666666}
+.hd a{color:#266397;}
+.hd a:hover{color:#ff9000}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+/*后台登录页面css*/
+@charset "utf-8";
+/* CSS Document */
+
+html, body {     height: 100%;}
+
+body {background: none repeat scroll 0% 0% #FFFFFF;font-family:"宋体" "微软雅黑",;font-size: 12px;margin: 0px;padding: 0px;}
+hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {margin: 0px;padding: 0px;}
+select, textarea, input { background: none repeat scroll 0% 0% transparent;border: 0px none;}
+
+ul, ol, li, dl, dd, dt {list-style: none outside none;}
+
+input, select, img {outline-style: none;vertical-align: middle;}
+
+h1, h2, h3, h4, h5, h6 { margin: 0px;padding: 0px;}
+
+table {border-collapse: collapse;border-spacing: 0px;}
+
+em, i {font-style: normal;}
+
+img {border: 0px none;outline-style: none;}
+
+.fl {float: left;}
+
+.fr {float: right;}
+
+.cl {background: none repeat scroll 0% 0% transparent; clear: both;height: 0px; line-height: 0; overflow: hidden; width: 0px;}
+
+.clearfix:after {clear: both;content: "."; display: block; height: 0px; visibility: hidden;}
+
+.clearfix {zoom:1}
+a {color:#000;text-decoration:none;cursor:pointer}
+
+a:hover {text-decoration:underline;color:#ff9000}
+.fl{ float:left}
+.fr{ float:right}
+
+
+.login-top{width:980px;margin:0 auto;height:36px;position:relative;line-height:36px;}
+.login-logo{width:223px;height:87px;position:absolute;top:-36px;left:2px;border:1px solid #d3d3d3;border-top:none;z-index:2;box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 1px -3px 5px rgba(0, 0, 0, 0.2), 3px 0 3px rgba(0, 0, 0, 0.2) inset;}
+.wel{padding-left:250px;font-size:12px;font-family:"微软雅黑"}
+.wel a{color:#336aac;}
+.wel span{  color:#F00;cursor: pointer; display: inline-block;font: 40px/22px tahoma,Arial,Simsun;height:30px;}
+.login-content{width:100%;background:#4f8fd7;z-index:-1}
+.login-box{width:980px;height:402px;background:url(../css/img/login-pic.jpg) no-repeat;margin:0 auto;position:relative;}
+.login-search{width:278px;height:322px;background:#546fb4;position:absolute;right:0px;top:110px}
+.login-theme{height:45px;background:#3e5ba7;color:#ffffff;font-size:20px;font-family:"微软雅黑";line-height:45px;padding-left:10px}
+#RegForm{padding:25px 0 0 35px}
+.input-box{padding-bottom:20px;height:30px;}
+.input-box .box{width:209px;float:left;line-height:30px;border:1px solid #d0d0d0;height:30px;background:#FFF;-moz-box-shadow:3px 3px 3px #cccccc inset; -webkit-box-shadow:3px 3px 3px #cccccc inset;box-shadow:3px 3px 3px #cccccc inset;}
+.input-box .check-box{width:69px;}
+.input-box span{margin:5px 0 0 10px;float:left;} 
+.input-box span a{color:#FFF}
+.pic-yz{float:left;margin-left:5px}
+.checking{width:209px;height:30px}
+.user_submit{width:72px;height:33px;background:url(../css/img/use-sub_bg.jpg) no-repeat;color:#2560a6;font-size:14px;font-family:"微软雅黑";font-weight:bold}
+.sun-footer{width:100%;margin-top:100px;border-top:1px solid #d3d3d3}
+.sun-footer div{width:980px;margin:0 auto}
+.sun-footer div p{text-align:center;font-size:12px;font-family:"微软雅黑";color:#787878;padding-top:10px}
+
+
+
+
+
+

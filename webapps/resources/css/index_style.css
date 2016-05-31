@@ -1,0 +1,577 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/**
+* Description: Base style 
+**/
+/*RESET
+-------------------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, code, form, input, button, fieldset, textarea, p, blockquote, th, td { margin: 0; padding: 0 }
+table { border-collapse: collapse; border-spacing: 0 }
+fieldset, img { border: 0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal }
+ol, ul { list-style: none }
+del, ins { text-decoration: none }
+caption, th { text-align: left }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal }
+input, button, textarea, select { font-size: 100% }
+q:before, q:after { content: '' }
+addr, acronym { border: 0; font-variant: normal }
+sup, sub { vertical-align: baseline }
+/*CLEARFIX
+-------------------------------------------------------------- */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/*FONT
+-------------------------------------------------------------- */
+body { font:12px/1.5 \5b8b\4f53, sans-serif }
+.f10 { font-size: 10px }
+.f12 { font-size: 12px }
+.f14 { font-size: 14px }
+.f16 { font-size: 16px }
+.f18 { font-size: 18px }
+.f20 { font-size: 20px }
+.f24 { font-size:24px }
+.f30 { font-size:30px }
+.fb { font-weight: 700 }
+.fn { font-weight: 400 }
+.t2 { text-indent: 2em }
+.lh20 { line-height:20px }
+.lh22 { line-height:22px }
+.lh24 { line-height:24px }
+.unl { text-decoration: underline }
+.no_unl { text-decoration: none }
+/*POSITION
+-------------------------------------------------------------- */
+.tl { text-align: left }
+.tc { text-align: center }
+.tr { text-align: right }
+.bc { margin-left: auto; margin-right: auto }
+.fl { float: left; display: inline }
+.fr { float: right; display: inline }
+.vm { vertical-align: middle; }
+.vt { vertical-align: top }
+.pr { position: relative }
+.pa { position: absolute }
+.abs-right { position: absolute; right: 0 }
+.abs-left { position: absolute; left: 0 }
+.hidden { visibility: hidden }
+.none { display: none }
+/*MARGIN / PADDING
+-------------------------------------------------------------- */
+.m5 { margin: 5px }
+.m10 { margin: 10px }
+.m15 { margin: 15px }
+.m20 { margin: 20px }
+.m25 { margin: 25px }
+.m30 { margin: 30px }
+.m50 { margin: 50px }
+.mt5 { margin-top: 5px }
+.mt10 { margin-top: 10px }
+.mt15 { margin-top: 15px }
+.mt20 { margin-top: 20px }
+.mt25 { margin-top: 25px }
+.mt30 { margin-top: 30px }
+.mt50 { margin-top: 50px }
+.mr5 { margin-right: 5px }
+.mr10 { margin-right: 10px }
+.mr15 { margin-right: 15px }
+.mr20 { margin-right: 20px }
+.mr25 { margin-right: 25px }
+.mr30 { margin-right: 30px }
+.mr50 { margin-right: 50px }
+.mb5 { margin-bottom: 5px }
+.mb10 { margin-bottom: 10px }
+.mb15 { margin-bottom: 15px }
+.mb20 { margin-bottom: 20px }
+.mb25 { margin-bottom: 25px }
+.mb30 { margin-bottom: 30px }
+.mb50 { margin-bottom: 50px }
+.ml5 { margin-left: 5px }
+.ml10 { margin-left: 10px }
+.ml15 { margin-left: 15px }
+.ml20 { margin-left: 20px }
+.ml25 { margin-left: 25px }
+.ml30 { margin-left: 30px }
+.ml50 { margin-left: 50px }
+.p5 { padding: 5px }
+.p10 { padding: 10px }
+.p15 { padding: 15px }
+.p20 { padding: 20px }
+.p25 { padding: 25px }
+.p30 { padding: 30px }
+.p50 { padding: 50px }
+.pt5 { padding-top: 5px }
+.pt10 { padding-top: 10px }
+.pt15 { padding-top: 15px }
+.pt20 { padding-top: 20px }
+.pt25 { padding-top: 25px }
+.pt30 { padding-top: 30px }
+.pt50 { padding-top: 50px }
+.pr5 { padding-right: 5px }
+.pr10 { padding-right: 10px }
+.pr15 { padding-right: 15px }
+.pr20 { padding-right: 20px }
+.pr25 { padding-right: 25px }
+.pr30 { padding-right: 30px }
+.pr50 { padding-right: 50px }
+.pb5 { padding-bottom: 5px }
+.pb10 { padding-bottom: 10px }
+.pb15 { padding-bottom: 15px }
+.pb20 { padding-bottom: 20px }
+.pb25 { padding-bottom: 25px }
+.pb30 { padding-bottom: 30px }
+.pb50 { padding-bottom: 50px }
+.pl5 { padding-left: 5px }
+.pl10 { padding-left: 10px }
+.pl15 { padding-left: 15px }
+.pl20 { padding-left: 20px }
+.pl25 { padding-left: 25px }
+.pl30 { padding-left: 30px }
+.pl50 { padding-left: 50px }
+
+
+html,body{min-width:1000px;}
+body{ font-family:\5FAE\8F6F\96C5\9ED1; -webkit-text-size-adjust:none;}
+img{ vertical-align:middle;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline; color:#ff9000!important; }
+
+/*---bg---*/
+.toolbar .subNav .s a,
+.cSearch .gnDn a,
+.cTopNews .tt,
+.cFocus .btn span,
+.cIconHot,
+.cysxztx,
+.cTabBtn a,
+.cdtyjy .col330 .col3 a,
+.cHotRank li span,
+.cGyx .font,
+.cLoginBox .close,
+.cConPop .close,
+.cInfor .col3 .s .btn,
+.cLoginBox .error,
+.cYY .dty b{ background:url(../images/cSprite_icon.png) no-repeat 0 0;}
+/*---toolbar S---*/
+.new_index_top{}
+.toolBarWrap{ position:relative; z-index:100; height:37px; line-height:37px; background-color:#f4f4f4; margin-bottom:10px; border-top:3px solid #054b87; border-bottom:1px solid #dddddd;position: fixed;top: 0;width: 100%;left:0}
+.toolbar{ width:980px; margin:0 auto;}
+.toolbar .cL{ float:left;}
+.toolbar a{ color:#1b1b1b;}
+.toolbar .modSel1{ float:left; height:37px; position:relative; margin-right:22px; display:inline;} 
+.toolbar .modSel1 a{ padding-right:13px; background:url(../images/cArrowb.png) no-repeat right center;}
+.toolbar .modSel1 .option{ position:absolute; top:35px; padding-top:10px; left:0;}
+.toolbar .modSel1 .option ul{ width:90px; text-align:center; overflow:hidden; zoom:1; color:#1b1b1b; font-family:\5B8B\4F53; border:2px solid #556fb5; background-color:#FFF;}
+.toolbar .modSel1 .option li{ margin-top:-1px; white-space:nowrap; cursor:pointer; line-height:36px; border-top:1px solid #dddddd;}
+.toolbar .modSel1 .option li a{ display:block; height:100%; padding-right:0; background:none;}
+.toolbar .modSel1 .option li a:hover{ text-decoration:none; background:#dddddd;}
+.toolbar .subNav{ float:right;}
+.toolbar .subNav li{ position:relative; float:left;}
+.toolbar .subNav li a{ display:inline-block;float:left;}
+.toolbar .subNav li span{height:12px; margin:0 10px;color:#DDDDDD;float:left;}
+.toolbar .subNav .s{ height:31px; overflow:hidden; padding-top:6px;}
+.toolbar .subNav .s a{ float:left; width:25px; height:25px; text-indent:-9999px; margin-right:10px; display:inline;}
+.toolbar .subNav .s a span{ display:none;}
+.toolbar .subNav .s .mail_m{background-position: 0 0;background:url("../images/cSprite_icon.png") no-repeat;}
+.toolbar .subNav .s .slwb{ background-position:-35px 0;}
+.toolbar .subNav .s .tcwb{ margin-right:0; background-position:-70px 0;}
+.cLoginBox{ line-height:normal; position:absolute; top:40px; left:0; width:206px; padding:10px 20px; border:2px solid #556fb5; background-color:#FFF;}
+.cSD{
+-webkit-box-shadow:3px 3px 0 rgba(0, 0, 0, 0.2);
+-moz-box-shadow:3px 3px 0 rgba(0, 0, 0, 0.2);
+-ms-box-shadow:3px 3px 0 rgba(0, 0, 0, 0.2);
+-o-box-shadow:3px 3px 0 rgba(0, 0, 0, 0.2);
+box-shadow:3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.cLoginBox .close{ position:absolute; right:10px; top:10px; width:12px; height:12px; text-indent:-9999px; overflow:hidden; background-position:-193px -23px;}
+.cLoginBox h3{ margin-bottom:5px; color:#666666;}
+.cLoginBox ul{ overflow:hidden; zoom:1; margin-bottom:10px; border-bottom:1px solid #dddddd;}
+.cLoginBox li{ float:none!important; margin-bottom:10px;}
+.cLoginBox li .forget{ float:right; line-height:28px;}
+.cLoginBox li label input{ vertical-align:-2px; margin-right:3px;}
+.cLoginBox .errorWrap{ height:28px; margin-bottom:3px;}
+.cLoginBox .error{ height:23px; line-height:23px; padding:0 10px 0 27px; color:#eb0000; background-color:#faf7ed; border:2px solid #f1e2cb; background-position:-352px 4px;}
+.cLoginBox .txt{ width:194px; height:18px; padding:5px; line-height:18px; border:1px solid #cccccc; background:url(../images/cInputBg.png) no-repeat 0 0;}
+.cLoginBox .btn{ width:60px; height:28px; vertical-align:middle; cursor:pointer; margin-right:5px; background-color:#ff9000; border:0 none; color:#FFF; line-height:28px;}
+.cLoginBox .btn:hover{ background-color:#ff0000;}
+.cLoginBox a{ color:#004276;}
+/*---header S---*/
+.header{ position:relative; z-index:99; height:115px; width:980px; margin:38px auto 0 ;_margin-top:-10px}
+.header h1{ float:left; width:187px; height:67px; margin-top:24px; margin-right:40px; display:inline; }
+.header h1 a{ display:block; height:100%; text-indent:-9999px; background:url(../images/cLogo.png) no-repeat 0 0;}
+.cSearch{ float:left;}
+.cSearch .type a{ display:inline-block; padding:5px 0; vertical-align:middle; font-size:14px; color:#426aba; }
+.cSearch .type .cur{ background:url(../images/cArrowt.png) no-repeat bottom center;}
+.cSearch .type span{ display:inline-block; vertical-align:middle; width:0; height:14px; margin:0 10px; border-left:1px solid #a5a5a5; border-right:1px solid #c6c6c6;}
+.cSearch .searchBox{ float:left; margin-right:29px; width:600px; padding:5px; display:inline; background-color:#f4f4f4; border:1px solid #dddddd;}
+.cSearch .searchBox .s{ overflow:hidden; zoom:1;}
+.cSearch .searchBox .s input{ float:left;}
+.cSearch .searchBox .s .txt{ width:500px; height:23px; line-height:23px; border:1px solid #cccccc; padding:3px 5px 2px; background:url(../images/cInputBg.png) no-repeat 0 0; }
+.cSearch .searchBox .s .btn{ width:87px; height:30px; border:0 none; cursor:pointer; font-weight:bold; background-color:#ff9000; color:#FFF; font-size:16px;}
+.cSearch .searchBox .cSel{ padding-top:4px;}
+.cSearch .searchBox select{ float:left; width:90px; border:1px solid #cccccc; height:22px; line-height:22px; margin-right:10px; display:inline; color:#898989;}
+.cSearch .gnDn{ position:relative; float:left; padding-top:15px;}
+.cSearch .gnDn a{ display:inline-block; line-height:31px; padding-right:36px; font-size:18px; color:#143c8c; background-position:76px -35px;}
+.cSearch .gnDn .close{ background-position:76px -76px;}
+
+/*---cSubNav S---*/
+.t_theme{color:#FFF;font-size:14px;float:left;line-height:22px;font-weight:bold;}
+.t_theme a{margin:0;letter-spacing:5px}
+.nn2{float:left;padding-left:10px}
+.cSubNavWrap{ border-top:2px solid #053071; background-color:#054b87; }
+.cSubNav{width:980px; margin:0 auto; line-height:1.8; }
+.cSubNav a{color:#ffffff; white-space:nowrap;}
+.cSubNav ul{ overflow:hidden; zoom:1; padding:10px 0;margin-left:-12px}
+.cSubNav li{ float:left; border-left:1px dotted #426aba; margin-left:-1px; overflow:hidden; display:inline;padding:0 12px 0 13px;}
+.cSubNav li p{line-height:22px;}
+.cSubNav li a{ margin-right:5px;}
+.cSubNav .li2 a{ margin-right:10px;}
+
+/*---content S---*/
+
+.content{ width:980px; margin:0 auto; overflow:hidden;padding-top:15px;background:#FFF}
+.cBoxTop{ overflow:hidden; zoom:1; margin-bottom:15px;}
+.cBoxTop a{ color:#666666;}
+.cBoxTop ul{ display:inline; line-height:2.5;}
+.cBoxTop li{ height:30px; overflow:hidden;}
+.cBoxTop .conL{ float:left;width:110px;}
+.cBoxTop .conR{ float:right;width:120px;}
+.cBoxTop .ad{ width:730px;  overflow:hidden; zoom:1;float:left;margin-left:10px;}
+.cBoxTop .ad img{ width:730px; height:90px;}
+/*---cTopNews S---*/
+.cTopNews{ margin-bottom:15px;}
+.cTopNews h1{ font:bold 44px/1.1 \5FAE\8F6F\96C5\9ED1;}
+.cTopNews h1 a{ color:#004276;letter-spacing: 0;}
+.cTopNews h1 a:hover{ text-decoration:none;}
+.cTopNews .tt{ float:left; width:70px; height:70px; border-right:1px solid #dddddd; margin-right:5px; display:inline; background-position:-104px 0;}
+.cTopNews ul{ overflow:hidden; zoom:1;}
+.cTopNews li{ float:left; font:14px/2.2 \5B8B\4F53; font-family:\5B8B\4F53; margin-right:15px; display:inline;}
+.cTopNews li a{ color:#666666;}
+
+/*---cMain S---*/
+.cMain{ float:left; width:700px; display:inline; margin-right:20px;}
+.col340{ width:340px; float:left; display:inline;}
+.col330{ width:330px; float:left; display:inline;}
+.col350{ width:350px; float:left; display:inline;}
+.cAside{ float:left; width:260px; display:inline; }
+
+/*---cFocus S---*/
+.cFocus{ height:270px; margin-bottom:10px;}
+.cFocus img{ width:340px; height:240px;}
+.cFocus .con{ position:relative; width:340px; height:240px; overflow:hidden;}
+.cFocus .con ul{ position:absolute; top:0; left:0; height:240px; width:10000px; position:relative;}
+.cFocus .con li{ position:relative; float:left;}
+.cFocus .con li img{ height:240px; width:340px;}
+.cFocus .con li p{ position:absolute; bottom:0; left:0; width:96%; padding:0 2%; height:42px;}
+.cFocus .con li p a{ color:#FFF; font:16px/42px \5B8B\4F53;}
+.cFocus .btn{ overflow:hidden; padding:6px; text-align:center;}
+.cFocus .btn span{ cursor:pointer; display:inline-block; width:10px; height:10px; overflow:hidden; margin:0 4px; background-position:-61px -35px;}
+.cFocus .btn .cur{ background-position:-41px -35px;}
+
+/*---cBox S---*/
+.cIconHot{ display:inline-block; width:34px; height:16px; background-position:-41px -50px;}
+.cysxztx{ display:inline-block; width:112px; height:18px; background-position:-41px -72px;}
+
+
+.cTabBtn{ font-size:0; text-align:center;}
+.cTabBtn a{ display:inline-block; width:19px; height:19px; vertical-align:middle; }
+.cTabBtn span{ display:inline-block; width:6px; height:6px; margin:0 3px; background-color:#d3d3d3; vertical-align:middle; overflow:hidden; zoom:1;}
+.cTabBtn .cur{ background-color:#f60;}
+.cTabBtn .prev{ margin-right:5px; background-position:-80px -30px;}
+.cTabBtn .next{ margin-left:5px; background-position:-80px -51px;}
+
+.cPosra{ float:left;}
+.cPosra{ color:#cdcdcd;}
+.cPosra a{ margin:0 5px; color:#666666;}
+
+.cBox .hd{ position:relative; zoom:1;}
+.cBox .hd h2{ height:40px; border-top:1px solid #dddddd; border-bottom:1px solid #dddddd;}
+.cBox .hd h2 a{ position:relative; top:-1px; float:left; width:85px; text-align:center; margin-right:5px; border-top:2px solid #143c8c; font:16px/38px \5FAE\8F6F\96C5\9ED1; color:#1b1b1b;}
+.cBox .hd h2 .cIconHot{ margin-top:10px;}
+.cBox .hd .cPosR{ position:absolute; height:18px; top:50%; margin-top:-9px; right:0;}
+.cBox .bd{ padding:15px 0;}
+/*---cjzsxz S---*/
+.cjzsxz a{ color:#004276;}
+.cjzsxz h3{ color:#004276; font-size:14px; margin-bottom:8px;}
+.cjzsxz h3 .type{ color:#eb0000;}
+.cTopic{ overflow:hidden; zoom:1; margin-bottom:15px;}
+.cTopic P{color:#666666; font-family: 宋体;}
+.cTopic .pic{ float:left; margin-right:10px; display:inline;}
+.cTopic .txt{ font-family:\5B8B\4F53; color:#666666; overflow:hidden; zoom:1; height:80px; line-height:20px;}
+.cTopic .detail{ white-space:nowrap; color:#eb0000;}
+.cTopic img{ width:120px; height:80px;}
+
+/*---cModList S---*/
+.cModListTabCon{ position:relative; overflow:hidden; width:340px; height:404px; }
+.cModList{ font-size:14px; color:#004276;}
+.cModList a{ color:#004276;}
+.cModList li{ height:24px; line-height:24px; padding-left:15px; overflow:hidden; background:url(../images/cDotted.jpg) no-repeat left center;}
+.cModList .first{ font-size:16px;font-weight:bold}
+
+.cModList1{ color:#004276;}
+.cModList1 a{ color:#004276;}
+.cModList1 .type{ color:#eb0000;padding-right:5px}
+.cModList1 li{ height:24px; line-height:24px; color:#004276; padding-left:15px; overflow:hidden; background:url(../images/cDotted.jpg) no-repeat left center;}
+
+/*---cjzzx S---*/
+.cjzzx .cModList{ margin-bottom:20px;}
+.cjzzx li{ height:26px; line-height:26px;}
+.cjzzx .cModList1 li{ height:24px; line-height:24px;}
+
+.ad700{ clear:both; margin-bottom:5px;margin-bottom:20px;}
+.ad700 img{ width:700px; height:94px;}
+
+/*---csj S---*/
+.csj{}
+.csj h3{ height:24px; margin-bottom:10px;}
+.csj h3 a{ color:#434343; font-size:16px;}
+
+/*---cjl S---*/
+.cjl{ margin-bottom:10px;}
+.cjl h3{ height:24px; margin-bottom:10px;}
+.cjl h3 a{ color:#434343; font-size:16px;}
+
+/*---csg S---*/
+.csg{ }
+.csg h3{ height:24px; margin-bottom:10px;}
+.csg h3 a{ color:#434343; font-size:16px;}
+
+/*---clj S---*/
+.clj{ margin-bottom:10px;}
+.clj h3{ height:24px; margin-bottom:10px;}
+.clj h3 a{ color:#434343; font-size:16px;}
+
+/*---cjzwk S---*/
+.cjzsx .bd{ padding-top:20px;}
+.cjzsx .imges{ float:left; width:360px; height:281px; margin-right:20px; display:inline; overflow:hidden;}
+.cjzsx .imges ul{ overflow:hidden; zoom:1;}
+.cjzsx .imges li{ float:left; display:inline; }
+.cjzsx .imges li p{ height:30px; line-height:30px; background-color:#d8d8d8; padding:0 10px; overflow:hidden;}
+.cjzsx .imges li p a{ color:#313131;}
+.cjzsx .imges .one{ width:194px; margin-right:1px;}
+.cjzsx .imges .one img{ width:194px; height:251px;}
+.cjzsx .imges .two{ width:165px; margin-bottom:1px;}
+.cjzsx .imges .two img,
+.cjzsx .imges .three{ width:165px;}
+.cjzsx .imges .three img{ width:165px; height:110px;}
+.cjzsx .texts{ overflow:hidden; zoom:1; height:281px;}
+.cjzsx .texts .cTopic h3{ height:24px; overflow:hidden; margin-bottom:8px; font-size:16px;}
+.cjzsx .texts .cTopic h3 a{ color:#434343;}
+.cjzsx .texts .cTopic p{ font-family:\5B8B\4F53; color:#666666;}
+.cjzsx .texts .cTopic .detail{ white-space:nowrap; color:#eb0000;}
+.cjzsx .type{ color:#eb0000;padding-right:5px}
+.cjzsx .listBox{ overflow:hidden; zoom:1; padding-top:10px; margin-top:10px; border-top:1px solid #efefef;}
+.cjzsx .listBox .cModList{ margin-left:-15px; overflow:hidden; zoom:1;}
+.cjzsx .listBox .cModList li{ float:left; height:28px; line-height:28px; width:135px; margin-left:15px; display:inline; color:#eb0000;font-size:12px}
+
+/*---cHotAritcal S---*/
+.cHotAritcal{ width:240px; height:180px; float:left; margin-right:20px; margin-bottom:10px; display:inline;}
+.cHotAritcal h3{ padding:0 10px 5px 10px; margin-bottom:10px; border-bottom:1px solid #efefef;}
+.cHotAritcal h3 a{ font-weight:bold; font-family:\5B8B\4F53; color:#666666;}
+
+/*---cArticalList S---*/
+.cArticalList{ float:left; width:440px; height:180px; overflow:hidden; zoom:1; margin-bottom:10px;}
+.cArticalList ul{ overflow:hidden; zoom:1; margin-left:-32px;}
+.cArticalList li{ float:left; width:86px; margin-left:32px; display:inline;}
+.cArticalList li .pic{ margin-bottom:5px; display:inline-block;  border:1px solid #dcdcdc;}
+.cArticalList li p{ height:40px; overflow:hidden; line-height:20px; margin-bottom:5px;}
+.cArticalList li p a{ font-size:12px; color:#004276;}
+.cArticalList li span{ color:#a0a0a0; }
+
+/*---cModListWrap1 S---*/
+.cModListWrap1{ clear:both; border:1px solid #dddddd; margin-bottom:10px; background-color:#f4f4f4;}
+.cModListWrap1 ul{ overflow:hidden; zoom:1; padding:13px 0 13px 20px;}
+.cModListWrap1 li{ float:left; width:314px; padding-top:1px; padding-bottom:1px; margin-right:10px; display:inline;}
+.cModListWrap1 li .type{ color:#eb0000;}
+
+/*---cDty S---*/
+.cDty{ overflow:hidden; zoom:1; padding-top:10px; margin-bottom:15px;}
+.cDty ul{ overflow:hidden; zoom:1; margin-left:-18px;}
+.cDty li{ position:relative; float:left; width:165px; height:110px; margin-left:19px; display:inline;}
+.cDty li p{ position:absolute; left:0; bottom:0; width:145px; height:25px; line-height:25px; padding:0 10px;}
+.cDty li p a{ color:#FFF;}
+
+/*---cDtyb S---*/
+.cDtyb a{ font-size:14px;}
+.cDtyb ul li{ height:26px; line-height:26px;}
+
+.cdtyjy{ padding-bottom:10px;}
+.cdtyjy .bd{ overflow:hidden; zoom:1;}
+.cdtyjy .col350{ height:265px; overflow:hidden; margin-right:20px;}
+.cdtyjy .col330{ height:265px; overflow:hidden;}
+.cdtyjy .col330 .cModList{ overflow:hidden;}
+.cdtyjy .col330 li{ border-top:1px solid #efefef; padding-top:5px; padding-bottom:5px; margin-top:-1px; overflow:hidden; zoom:1; font-size: 12px;}
+.cdtyjy .col330 .col1{ float:left; width:200px; margin-right:10px; display:inline;}
+.cdtyjy .col330 .col2{ float:left; width:75px; color:#666666;  margin-right:10px; display:inline;}
+.cdtyjy .col330 .col3{ float:left; width:20px; height:20px; display:inline;}
+.cdtyjy .col330 .col3 a{ display:block; height:100%; background-position:-192px 2px; }
+.cdtyjy .col330 .col3 a:hover{ background-position:-209px -21px;}
+/*---chyt S---*/
+.chyt{}
+.cAdList{ float:left; width:350px; height:281px; overflow:hidden; margin-right:34px; display:inline; }
+.cAdList ul{ overflow:hidden; zoom:1; margin-left:-19px;}
+.cAdList li{ float:left; width:163px; margin-left:19px; margin-top:10px; display:inline; border:1px solid #eaeaea;}
+.cAdList li p{ height:26px; line-height:26px; padding:0 10px; background-color:#eaeaea;}
+.cAdList li p a{ color:#313131;}
+.chyt .texts{ overflow:hidden; zoom:1; height:281px;}
+.chyt .texts .cTopic h3{ height:24px; overflow:hidden; margin-bottom:8px; font-size:16px;}
+.chyt .texts .cTopic h3 a{ color:#434343;}
+.chyt .texts .cTopic p{ font-family:\5B8B\4F53; color:#666666;}
+.chyt .texts .cTopic .detail{ white-space:nowrap; color:#eb0000;}
+.chyt .texts .cModList li{ height:28px; line-height:28px;font-size:12px}
+.chyt .texts .cModList li .type{ color:#eb0000;padding-right:5px}
+.cModList li .type{padding-right:5px;}
+/*---csq S---*/
+.csq .bd{ overflow:hidden; zoom:1;}
+.csq .col350{ height:371px; overflow:hidden;}
+.cHotRank{ float:left; width:330px; height:371px; overflow:hidden;}
+.cHotRank h3{ position:relative; padding:8px 0; font-weight:bold; font-family:\5B8B\4F53; background-color:#FFF;}
+.cHotRank ul{ margin-top:-3px; overflow:hidden; zoom:1; }
+.cHotRank li{ border-top:1px dotted #dddddd; padding:8px 0 7px 0; }
+.cHotRank li a{ color:#666666;}
+.cHotRank li span{ display:inline-block; width:18px; height:18px; text-align:center; color:#FFF; line-height:18px; margin-top:-5px; margin-bottom:-5px; margin-right:5px; background-position:-249px 0;}
+.cHotRank li .top{ background-position:-221px 0;}
+
+/*---ad980 S---*/
+.ad980{ clear:both; width:980px; margin:0 auto 20px;}
+.ad980 img{ width:980px; height:90px;}
+
+
+/*---cErWeiMa S---*/
+.cErWeiMa{ border:1px solid #dddddd; padding:10px; margin-bottom:15px;overflow: hidden;}
+.cErWeiMa img{ float:left; width:71px; height:71px; margin-right:10px; display:inline;margin-top:4px}
+.cErWeiMa dl{ overflow:hidden; zoom:1;}
+.cErWeiMa dt{ font-size:16px; margin-bottom:5px; color:#1b1b1b;}
+.cErWeiMa dd{ font-size:14px; color:#999999;}
+
+/*---cTopicArea S---*/
+.cTopicArea{ margin-bottom:15px;}
+
+/*---cBox1 S---*/
+.cBox1{ position:relative; border:1px solid #dddddd; margin-bottom:15px;}
+.cBox1 h2{ position:relative; padding:0 10px; height:37px; margin:-1px -1px 0; line-height:37px; border-top:2px solid #143c8c; border-bottom:1px solid #dddddd;}
+.cBox1 h2 a{ color:#1b1b1b; font-size:16px;}
+.cBox1 .bd{ padding:10px;}
+.cBox1 .cPosR{ position:absolute; height:18px; right:10px; top:12px;}
+/*---cNewTop S---*/
+.cNewTop{ padding-bottom:10px; margin-bottom:5px; border-bottom:1px solid #efefef;}
+.cNewTop h3{ margin:5px 0; height:18px; overflow:hidden;}
+.cNewTop h3 a{ color:#004276; font-weight:bold;}
+.cNewTop .pic{ float:left; margin-right:14px; display:inline;}
+.cNewTop .pic img{ width:120px; height:80px;}
+.cNewTop p{ overflow:hidden; height:80px; line-height:20px; color:#666666;font-family: 宋体;}
+.cNewTop p .detail{ white-space:nowrap; color:#ba2636;}
+
+.cGyx .font{ display:inline-block; width:165px; font-size:0; color:#FFF; overflow:hidden; height:15px; background-position:-41px -95px;}
+
+.cModList2{ line-height:28px;}
+.cModList2 li{ height:28px;}
+.cModList2 li a{ color:#666666;}
+
+/*---cYY S---*/
+.cYY li{ position:relative; float:left; width:84px; color:#FFF; height:84px;background-color:#143C8C; margin-bottom:4px; display:inline; zoom:1;}
+.cYY li .link{ position:relative; display:block; height:26px; padding-top:58px;}
+.cYY li .link .txt{ display:block; color:#FFF; text-align:center;}
+.cYY li .link:hover{ text-decoration:none; color:#FFF;}
+.cYY {height:180px}
+.cYY .hyt{ width:172px; margin-right:4px;}
+.cYY .hyt .link{ height:64px; padding-top:20px; padding-left:60px;}
+.cYY .hyt .link strong{ font-size:16px; margin-bottom:5px; color:#FFF;}
+.cYY .hyt .link .txt{ text-align:left;}
+.cYY .hyt i{ position:absolute; top:50%; left:20px; width:29px; height:35px; margin-top:-17px; background:url(../images/ciconhyt.png) no-repeat 0 0;}
+.cYY .dty{ z-index:10;}
+.cYY .dty i{ position:absolute; top:23px; left:50%; width:28px; height:30px; margin-left:-15px; background:url(../images/cicondty.png) no-repeat 0 0;}
+.cYY .dty b{ position:absolute; bottom:0; right:0; width:9px; height:9px; background-position:-232px -28px;font-size:0; line-height:1em}
+.cYY .dty .con{display:none; position:absolute; top:84px; left:0; padding-top:1px;}
+.cYY .dty .conin{ padding:10px 5px; background-color:#143c8c; zoom:1;}
+.cYY .dty .conin p a{cursor:pointer}
+.cYY .dty .conin a{ display:inline-block; line-height:24px; margin:0 10px; color:#FFF;}
+.cYY .dty .conin a:hover{ text-decoration:none;}
+.cYY .jzwk{ margin-right:4px;}
+.cYY .jzwk i{ position:absolute; top:20px; left:50%; width:25px; height:30px; margin-left:-15px; background:url(../images/ciconjzwk.png) no-repeat 0 0;}
+.cYY .jzbk{ margin-right:4px;}
+.cYY .jzbk i{ position:absolute; top:16px; left:50%; width:35px; height:35px; margin-left:-18px; background:url(../images/shequ.png) no-repeat 0 0;}
+.cYY .jzwd i{ position:absolute; top:20px; left:50%; width:30px; height:28px; margin-left:-15px; background:url(../images/iconjzwd.png) no-repeat 0 0;}
+.cYY .liHover .con{ display:block;}
+/*---cFirends S---*/
+.cFirends{ width:978px; margin:0 auto 20px; border:1px solid #dddddd;}
+.cFirends h2{ height:28px; line-height:28px; color:#1b1b1b; font-size:16px; padding-left:10px; border-bottom:1px solid #dddddd; background-color:#f4f4f4;}
+.cFirends .bd{ padding:10px 30px;}
+.cFirends .bd a{ color:#666; white-space:nowrap; display:inline-block; margin:5px; }
+
+/*---cFooterInfor S---*/
+.cFooterInfor{ background-color:#f4f4f4; border-top:1px solid #dddddd;}
+.cInfor{ width:980px; margin:0 auto; overflow:hidden; zoom:1; color:#535353;}
+.cInfor a{ white-space:nowrap; color:#666666;}
+.cInfor .col1,
+.cInfor .col2,
+.cInfor .col3{ float:left; padding:20px 10px 10000px 20px; margin-bottom:-10000px; border-left:1px solid #dddddd; display:inline;}
+.cInfor .col1{ width:340px; margin-left:-21px;}
+.cInfor .col2{ width:295px;}
+.cInfor .col3{ width:273px;}
+
+.cInfor .dlList{ overflow:hidden; zoom:1; margin-bottom:15px; }
+.cInfor .dlList dt{ font-size:16px; color:#262626; margin-bottom:10px; }
+.cInfor .dlList dd{ float:left; margin-right:10px; margin-bottom:10px; display:inline;}
+.cInfor .col2 .dlList dd{ width:128px;}
+.cInfor .col3 p{ padding:5px 0;}
+.cInfor .col3 .s{ overflow:hidden; zoom:1; margin-bottom:10px;}
+.cInfor .col3 .s input{ float:left;}
+.cInfor .col3 .s .txt{ width:190px; height:18px; padding:5px; line-height:18px; border:1px solid #cccccc; background:url(../images/cInputBg.png) no-repeat 0 0;}
+.cInfor .col3 .s .btn{ margin-left:-1px; border:1px solid #CCC; cursor:pointer; width:68px; height:30px; background-position:-277px 0; font-size:0; line-height:99px;}
+
+/*---cFooterWrap S---*/
+.cFooterWrap{ background-color:#535353;}
+.cFooter{ width:980px; margin:0 auto; height:44px; line-height:44px; overflow:hidden; zoom:1; color:#FFF;}
+.cFooter p{float:left;}
+.cFooter div{float:right; white-space:nowrap;}
+.cFooter div a{ color:#FFF; margin:0 5px;}
+
+/*---cConPop S---*/
+.cConPop{ position:absolute; z-index:98; left:0; top:165px; width:100%; overflow:hidden;
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#E5053071', endColorstr='#E5053071');background:rgba(5,48,113,0.9);
+}
+.cConPop .close{ position:absolute; bottom:0; right:0; width:41px; height:41px; text-indent:-9999px; overflow:hidden; background-position:-193px -45px; }
+.cConPop .conPop{position:relative; width:980px; padding:15px 0; margin:0 auto; overflow:hidden; zoom:1;}
+.cConPop .conPop .col1{ float:left; width:440px; display:inline; overflow:hidden; zoom:1;}
+.cConPop .conPop .col2{ float:left; width:200px; padding-left:30px; display:inline; overflow:hidden; zoom:1;}
+.cConPop .conPop .col3{ float:left; width:260px; padding-left:30px; display:inline; overflow:hidden; zoom:1;}
+.cConPop h2{ color:#FFF; font-size:20px; margin-bottom:10px;}
+.cConPop .col1 ul{ overflow:hidden; zoom:1;}
+.cConPop .col1 li{ float:left; width:94px; margin-right:10px; text-align:center; line-height:94px; margin-bottom:10px; display:inline;}
+.cConPop .col1 li a{ font-size:24px; color:#FFF;}
+.cConPop .col2 ul{ overflow:hidden; zoom:1;}
+.cConPop .col2 li{ float:left; width:94px; margin-bottom:10px; display:inline;}
+.cConPop .col2 li a{ color:#FFF; font-size:16px;}
+.cConPop .col3 ul{ overflow:hidden; zoom:1; margin-left:-30px;}
+.cConPop .col3 li{ float:left; width:100px; height:45px; margin-left:30px; margin-bottom:10px; display:inline;}
+.cConPop .col3 li a{ display:block; width:100px; height:100%;}
+.cConPop .col3 li .sina{ background:url(../images/sina.png) no-repeat left center;}
+.cConPop .col3 li .cSh{ background:url(../images/cSh.png) no-repeat left center;}
+.cConPop .col3 li .cWy{ background:url(../images/cWy.png) no-repeat left center;}
+.cConPop .col3 li .cFh{ background:url(../images/cFh.png) no-repeat left center;}
+.cConPop .col3 li .cBd{ background:url(../images/cBd.png) no-repeat left center;}
+.cConPop .col3 li .cTx{ background:url(../images/cTx.png) no-repeat left center;}
+
+/*展讯*/
+.Spreadtrum{border:1px solid #dddddd;overflow:hidden;margin-bottom:10px}
+.Spreadtrum h3{background:#f4f4f4;padding:2px 0;border-bottom:1px solid #dddddd;font-size:16px;color:1b1b1b;padding-left:10px}
+.friend_pic{padding:10px 5px;overflow:hidden}
+.friend_pic a{width:310px;height:60px;display:block;float:left;padding:0 0 10px 10px}
+.qq{background:#f4f4f4;padding:2px 0;border-bottom:1px solid #dddddd;font-size:16px;color:1b1b1b;padding-left:10px;overflow:hidden}
+.qq a{padding-right:10px}
+
+
+/*---filter---*/
+.cDty li p,
+.cFocus .con li p{ filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#B2000000', endColorstr='#B2000000');background:rgba(0,0,0,0.7);}
+@media screen and (min-width:0\0) {  
+    /* IE9 and IE10 rule sets go here */  
+	.cDty li p,
+	.cFocus .con li p,
+	.cConPop{ filter:progid:DXImageTransform.Microsoft.gradient(enabled='false');}
+}

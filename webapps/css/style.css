@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+html, body {height: 100%;}
+
+body {background: none repeat scroll 0% 0% #FFFFFF;font-family:"宋体" "微软雅黑",;font-size: 12px;margin: 0px;padding: 0px;}
+hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {margin: 0px;padding: 0px;}
+select, textarea, input { background: none repeat scroll 0% 0% transparent;border: 0px none;}
+
+ul, ol, li, dl, dd, dt {list-style: none outside none;}
+
+input, select, img {outline-style: none;vertical-align: middle;}
+
+h1, h2, h3, h4, h5, h6 { margin: 0px;padding: 0px;}
+
+table {border-collapse: collapse;border-spacing: 0px;}
+
+em, i {font-style: normal;}
+
+img {border: 0px none;outline-style: none;}
+
+.fl {float: left;}
+
+.fr {float: right;}
+
+.cl {background: none repeat scroll 0% 0% transparent; clear: both;height: 0px; line-height: 0; overflow: hidden; width: 0px;}
+
+.clearfix:after {clear: both;content: "."; display: block; height: 0px; visibility: hidden;}
+
+.clearfix {zoom:1}
+a {color:#000;text-decoration:none;cursor:pointer}
+
+a:hover {text-decoration:underline;color:#ff9000}
+.fl{ float:left}
+.fr{ float:right}
+.header-warp{width:100%;height:80px;background:#054b87;}
+.header{width:980px;margin:0 auto;height:80px}
+.logo{width:185px;height:55px;float:left;margin-top:13px}
+.sun-nav{float:left;line-height:30px;margin:40px 0 0 35px }
+.sun-nav a{padding:0 15px;color:#FFF;display:block;float:left;font-family:"微软雅黑";font-size:14px}
+.sun-nav a:hover{color:#ff9000}
+.content{width:980px;margin:0 auto;}
+.login{position:relative;background:url(img/login-bg.jpg) no-repeat;height:488px;border-bottom:1px solid #dddddd;overflow:hidden}
+.login-box{position:absolute;right:0px;top:35px;width:292px;height:380px;border:1px solid #dddddd;background:#FFF}
+.login-theme{height:37px;border-top:1px solid #fff;background:url(img/login-h-bg.gif) repeat-x;font-size:16px;font-family:"微软雅黑";color:#535353}
+.login-theme span{margin: 10px 0 0 20px;display:block;font-size:18px}
+.demo{margin:0 20px;}
+/* demo */
+.demo table td{vertical-align:top;padding-top:10px;}
+
+.demo table .tdcon{text-align:right;width:160px;padding:5px 0 0 0;}
+.demo table .stext{border:solid 1px #ddd;height:26px;line-height:20px;font-size:14px;padding:2px 2px 2px 10px ;width:241px;color:#999999;-moz-box-shadow:2px 2px 2px #dddddd inset;-webkit-box-shadow:2px 2px 2px #dddddd inset;box-shadow:2px 2px 2px #dddddd inset;}
+.wj{margin-left:10px;color:#004276}
+/* tipinf*/
+
+.tipinfo font.error{background:url(img/fail-bg.gif) #faf7ed no-repeat 5px 3px;padding:2px;color:#666666;width:220px;display:block;border:1px solid #f1e2cb;margin-bottom:5px;padding-left:29px;line-height:18px}
+.tipinfo font.valid{background:url(img/checked.gif) #faf7ed no-repeat 5px 3px;padding:2px;color:#666666;width:220px;display:block;border:1px solid #f1e2cb;margin-bottom:5px;padding-left:29px;line-height:18px} 
+.button{background:url(img/submit-bg.jpg) no-repeat;width:251px;height:36px;color:#FFF;font-weight:bold;font-size:16px;font-family:"微软雅黑";cursor:pointer}
+input.cur{background:url(img/sub-bg.jpg) no-repeat}
+.border{border-bottom:1px solid #dddddd;margin-top:10px}
+.msg-login{border-top:1px solid #dddddd;margin-top:20px;padding:14px 0}
+.msg-login span{color:#535353}
+.msg-login a{color:#004276}
+.msg-login a:hover{color:#ff9000}
+.pass-msg{color:#999999;line-height:22px}
+.input_move{background:#F00}
+
+.footer{padding-top:10px;color:#666666;font-family:"宋体"} 
+.foorer-nav a{color:#666666}
+.foorer-nav a:hover{color:#ff9000}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
